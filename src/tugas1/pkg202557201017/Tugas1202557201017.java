@@ -78,6 +78,11 @@ public class Tugas1202557201017 {
              tampilanArray += "\n";
             }
          
+         
+         //untuk mengenbalikan total nilai ke semula 
+         total =0;
+         penjumlahanArray=0;
+         totalGanjil=0;
          //fitur menampilkan total ganjil
  
          for (int i = 0; i < data.length; i++) {
@@ -94,6 +99,7 @@ public class Tugas1202557201017 {
         double rataRata = total/penjumlahanArray;
         System.out.println("total semua angka : "+total);
         System.out.println("total rata rata :"+rataRata);
+        System.out.println("total nilai ganjil :"+totalGanjil);
     }
     
 }
