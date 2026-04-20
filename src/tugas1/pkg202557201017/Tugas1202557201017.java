@@ -27,13 +27,17 @@ public class Tugas1202557201017 {
         
         //menampilkan total semua angka
         double total =0;
+        double penjumlahanArray=0;
         
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 total += data [i][j];
+                penjumlahanArray++;
             }
         }
+        double rataRata = total/penjumlahanArray;
         System.out.println("total semua angka : "+total);
+        System.out.println("total rata rata :"+rataRata);
     }
     
 }
