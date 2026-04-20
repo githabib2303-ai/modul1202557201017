@@ -15,10 +15,8 @@ public class Tugas1202557201017 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int data[][] = {{4,6,4,2,8,4,2,10},{4,6,4,2,8,4,2,10}};
-        
-        //isi array asli
-        
+        int data[][] = {{4,6,4,2,8,4,2,10},{4,6,4,2,8,4,2,10}};     
+//isi array asli  
         System.out.println("isi array asli : ");
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
@@ -26,8 +24,7 @@ public class Tugas1202557201017 {
             }
             System.out.println("");
         }
-        
-        //menampilkan total semua angka
+//menampilkan total semua angka
         double total =0;
         double penjumlahanArray=0;
         double totalGanjil=0;
@@ -37,10 +34,8 @@ public class Tugas1202557201017 {
                 total += data [i][j];
                 penjumlahanArray++;
             }
-        }
-        
-        
-        //menampilkan array pada awal joptionpane
+        } 
+//menampilkan array pada awal joptionpane
         String arrayAsliTeks = "";
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
@@ -50,15 +45,15 @@ public class Tugas1202557201017 {
         }
         JOptionPane.showMessageDialog(null, "isi array asli :\n"+arrayAsliTeks);
         
-        //menampilkan fitur angka yang akan diganti 
+//menampilkan fitur angka yang akan diganti 
         String inputCari =JOptionPane.showInputDialog("masukkan angka yang mau diganti : ");
         int elemenyangdiganti = Integer.parseInt(inputCari);
         
         //menampilkann fitur untuk menampilkan angka penggantinya 
-        String inputBaru =JOptionPane.showInputDialog("masukkan angka yang mau diganti : ");
+        String inputBaru =JOptionPane.showInputDialog("masukkan angka pengganti nya : ");
         int elemenpengganti = Integer.parseInt(inputBaru);
         
- //fitur pengganti angka
+//fitur pengganti angka
         String posisiIndex = "";
         String tampilanArray= "";
         System.out.println("angka setelah dirubah :");
@@ -76,30 +71,39 @@ public class Tugas1202557201017 {
             }
              System.out.println();
              tampilanArray += "\n";
-            }
-         
-         
-         //untuk mengenbalikan total nilai ke semula 
+            }      
+//untuk mengembalikan total nilai ke semula 
          total =0;
          penjumlahanArray=0;
          totalGanjil=0;
          //fitur menampilkan total ganjil
- 
          for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 total +=data [i][j];
                 penjumlahanArray++;
                 if (j % 2==1){
                     totalGanjil += data [i][j];
-                }
-                
+                }      
             }
-         }
-        
+         }  
         double rataRata = total/penjumlahanArray;
+        System.out.println();
         System.out.println("total semua angka : "+total);
         System.out.println("total rata rata :"+rataRata);
         System.out.println("total nilai ganjil :"+totalGanjil);
-    }
-    
+        System.out.println("==================================");
+        
+        
+        //tugas 2
+        String data2 [][] ={{"ABDUL","085646668991", "KEDIRI"},
+                    {"KUSNO","085646668992", "TRENGGALEK"},
+                    {"PONIRAN","085646668999", "BOJONEGORO"}};
+     
+     //judul kolom
+     System.out.println("NAMA\tTELEPON\t\tALAMAT");
+     
+     for (int i=0; i<data2.length; i++){
+         System.out.println(data2 [i][0] + "\t"+data2 [i][1] + "\t"+data2 [i][2] );
+     }
+    }  
 }
