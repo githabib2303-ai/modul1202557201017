@@ -14,7 +14,16 @@ public class Tugas1202557201017 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int data[][] = {{4,6,2,8,4,2,10},{4,6,2,8,4,2,10}};
+        
+        //isi array asli
+        System.out.println("isi array asli : ");
+        for (int i = 0; i < data.length; i++) {
+            for (int j = 0; j < data[i].length; j++) {
+              System.out.print(data [i][j] +" ");  
+            }
+            System.out.println();
+        }
     }
     
 }
