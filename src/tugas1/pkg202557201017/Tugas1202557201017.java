@@ -14,7 +14,7 @@ public class Tugas1202557201017 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int data[][] = {{4,6,2,8,4,2,10},{4,6,2,8,4,2,10}};
+        int data[][] = {{4,6,4,2,8,4,2,10},{4,6,4,2,8,4,2,10}};
         
         //isi array asli
         System.out.println("isi array asli : ");
@@ -24,6 +24,16 @@ public class Tugas1202557201017 {
             }
             System.out.println("");
         }
+        
+        //menampilkan total semua angka
+        double total =0;
+        
+        for (int i = 0; i < data.length; i++) {
+            for (int j = 0; j < data[i].length; j++) {
+                total += data [i][j];
+            }
+        }
+        System.out.println("total semua angka : "+total);
     }
     
 }
